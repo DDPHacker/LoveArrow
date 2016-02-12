@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: 7b4ce5a7ee3904ff1ae190d7736eeeaa
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Grass_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 150
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Grass_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1024
+        height: 444
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 507, y: 196}
+        - {x: 392, y: 196}
+        - {x: 391, y: 195}
+        - {x: 375, y: 195}
+        - {x: 374, y: 194}
+        - {x: 320, y: 194}
+        - {x: 313, y: 201}
+        - {x: 306, y: 204}
+        - {x: 301, y: 204}
+        - {x: 298, y: 201}
+        - {x: 298, y: 198}
+        - {x: 292, y: 202}
+        - {x: 288, y: 208}
+        - {x: 285, y: 210}
+        - {x: 283, y: 210}
+        - {x: 279, y: 207}
+        - {x: 277, y: 202}
+        - {x: 276, y: 199}
+        - {x: 263, y: 199}
+        - {x: 258, y: 198}
+        - {x: 249, y: 195}
+        - {x: 248, y: 199}
+        - {x: 242, y: 204}
+        - {x: 239, y: 203}
+        - {x: 235, y: 202}
+        - {x: 231, y: 211}
+        - {x: 228, y: 216}
+        - {x: 224, y: 219}
+        - {x: 220, y: 219}
+        - {x: 218, y: 217}
+        - {x: 215, y: 205}
+        - {x: 211, y: 209}
+        - {x: 208, y: 213}
+        - {x: 208, y: 219}
+        - {x: 207, y: 222}
+        - {x: 200, y: 222}
+        - {x: 198, y: 220}
+        - {x: 195, y: 216}
+        - {x: 193, y: 211}
+        - {x: 193, y: 209}
+        - {x: 190, y: 209}
+        - {x: 184, y: 203}
+        - {x: 178, y: 205}
+        - {x: 175, y: 205}
+        - {x: 172, y: 204}
+        - {x: 167, y: 198}
+        - {x: 166, y: 196}
+        - {x: 144, y: 196}
+        - {x: 143, y: 197}
+        - {x: 140, y: 197}
+        - {x: 137, y: 203}
+        - {x: 133, y: 206}
+        - {x: 130, y: 207}
+        - {x: 130, y: 209}
+        - {x: 127, y: 213}
+        - {x: 122, y: 215}
+        - {x: 120, y: 215}
+        - {x: 118, y: 213}
+        - {x: 118, y: 206}
+        - {x: 119, y: 202}
+        - {x: 112, y: 196}
+        - {x: 111, y: 200}
+        - {x: 108, y: 203}
+        - {x: 104, y: 203}
+        - {x: 100, y: 199}
+        - {x: 100, y: 212}
+        - {x: 98, y: 214}
+        - {x: 93, y: 214}
+        - {x: 89, y: 211}
+        - {x: 83, y: 205}
+        - {x: 78, y: 205}
+        - {x: 76, y: 209}
+        - {x: 74, y: 218}
+        - {x: 71, y: 222}
+        - {x: 64, y: 222}
+        - {x: 63, y: 216}
+        - {x: 62, y: 219}
+        - {x: 58, y: 220}
+        - {x: 54, y: 217}
+        - {x: 51, y: 211}
+        - {x: 48, y: 211}
+        - {x: 45, y: 208}
+        - {x: 43, y: 210}
+        - {x: 42, y: 212}
+        - {x: 42, y: 217}
+        - {x: 38, y: 222}
+        - {x: 35, y: 222}
+        - {x: 27, y: 215}
+        - {x: 22, y: 205}
+        - {x: 21, y: 198}
+        - {x: 18, y: 198}
+        - {x: 18, y: 204}
+        - {x: 17, y: 207}
+        - {x: 14, y: 210}
+        - {x: 10, y: 210}
+        - {x: 7, y: 208}
+        - {x: 5, y: 203}
+        - {x: -1, y: 202}
+        - {x: -4, y: 199}
+        - {x: -4, y: 196}
+        - {x: -17, y: 196}
+        - {x: -18, y: 197}
+        - {x: -27, y: 197}
+        - {x: -28, y: 198}
+        - {x: -32, y: 199}
+        - {x: -38, y: 201}
+        - {x: -41, y: 201}
+        - {x: -44, y: 197}
+        - {x: -47, y: 202}
+        - {x: -50, y: 202}
+        - {x: -57, y: 200}
+        - {x: -64, y: 202}
+        - {x: -75, y: 202}
+        - {x: -76, y: 203}
+        - {x: -79, y: 203}
+        - {x: -80, y: 202}
+        - {x: -89, y: 202}
+        - {x: -92, y: 204}
+        - {x: -97, y: 204}
+        - {x: -102, y: 201}
+        - {x: -105, y: 206}
+        - {x: -108, y: 210}
+        - {x: -112, y: 210}
+        - {x: -116, y: 208}
+        - {x: -126, y: 198}
+        - {x: -131, y: 204}
+        - {x: -136, y: 203}
+        - {x: -144, y: 203}
+        - {x: -147, y: 202}
+        - {x: -153, y: 197}
+        - {x: -158, y: 197}
+        - {x: -159, y: 196}
+        - {x: -174, y: 196}
+        - {x: -175, y: 197}
+        - {x: -185, y: 197}
+        - {x: -186, y: 198}
+        - {x: -194, y: 198}
+        - {x: -199, y: 202}
+        - {x: -202, y: 202}
+        - {x: -205, y: 201}
+        - {x: -215, y: 196}
+        - {x: -216, y: 197}
+        - {x: -218, y: 197}
+        - {x: -223, y: 201}
+        - {x: -228, y: 201}
+        - {x: -233, y: 198}
+        - {x: -243, y: 197}
+        - {x: -244, y: 198}
+        - {x: -250, y: 198}
+        - {x: -254, y: 197}
+        - {x: -258, y: 206}
+        - {x: -264, y: 211}
+        - {x: -268, y: 212}
+        - {x: -272, y: 208}
+        - {x: -273, y: 202}
+        - {x: -274, y: 200}
+        - {x: -282, y: 201}
+        - {x: -288, y: 202}
+        - {x: -291, y: 204}
+        - {x: -295, y: 204}
+        - {x: -299, y: 210}
+        - {x: -301, y: 212}
+        - {x: -306, y: 212}
+        - {x: -313, y: 205}
+        - {x: -315, y: 199}
+        - {x: -326, y: 199}
+        - {x: -334, y: 198}
+        - {x: -335, y: 197}
+        - {x: -446, y: 197}
+        - {x: -447, y: 196}
+        - {x: -512, y: 196}
+        - {x: -512, y: -222}
+        - {x: 512, y: -222}
+        - {x: 512, y: 197}
+        - {x: 508, y: 197}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

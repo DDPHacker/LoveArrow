@@ -1,0 +1,486 @@
+fileFormatVersion: 2
+guid: 07fa4a9616a73f34785703310e3f094b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Spaceship_0
+    21300002: Spaceship_1
+    21300004: Spaceship_2
+    21300006: Spaceship_3
+    21300008: Spaceship_4
+    21300010: Spaceship_5
+    21300012: Spaceship_6
+    21300014: Spaceship_7
+    21300016: Spaceship_8
+    21300018: Spaceship_9
+    21300020: Spaceship_10
+    21300022: Spaceship_11
+    21300024: Spaceship_12
+    21300026: Spaceship_13
+    21300028: Spaceship_14
+    21300030: Spaceship_15
+    21300032: Spaceship_16
+    21300034: Spaceship_17
+    21300036: Spaceship_18
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: Spaceship_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 18}
+        - {x: -17, y: 3}
+        - {x: -17, y: -14}
+        - {x: -11, y: -24}
+        - {x: 9, y: -24}
+        - {x: 17, y: -15}
+        - {x: 17, y: 18}
+    - name: Spaceship_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 120
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 18}
+        - {x: -16, y: 18}
+        - {x: -17, y: 12}
+        - {x: -17, y: -16}
+        - {x: -9, y: -24}
+        - {x: 9, y: -24}
+        - {x: 12, y: -23}
+        - {x: 17, y: -17}
+        - {x: 17, y: 14}
+    - name: Spaceship_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 120
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 18}
+        - {x: -17, y: 12}
+        - {x: -17, y: -18}
+        - {x: -12, y: -24}
+        - {x: 9, y: -24}
+        - {x: 11, y: -23}
+        - {x: 17, y: -16}
+        - {x: 17, y: 18}
+    - name: Spaceship_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 120
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -24}
+        - {x: -6, y: -22}
+        - {x: -9, y: -21}
+        - {x: -11, y: -24}
+      - - {x: 7, y: -24}
+        - {x: 11, y: -24}
+        - {x: 11, y: -21}
+        - {x: 8, y: -20}
+        - {x: 6, y: -22}
+      - - {x: 4, y: -24}
+        - {x: 17, y: -15}
+        - {x: 17, y: 18}
+        - {x: -15, y: 18}
+        - {x: -17, y: -1}
+        - {x: -17, y: -13}
+        - {x: -5, y: -24}
+        - {x: -2, y: -24}
+        - {x: 0, y: -23}
+        - {x: 0, y: -21}
+        - {x: 0, y: -23}
+        - {x: 3, y: -24}
+    - name: Spaceship_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 120
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 19}
+        - {x: -14, y: -15}
+        - {x: 8, y: -15}
+        - {x: 14, y: -11}
+        - {x: 14, y: 17}
+        - {x: 12, y: 19}
+    - name: Spaceship_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 120
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 21}
+        - {x: -14, y: 17}
+        - {x: -14, y: -11}
+        - {x: -9, y: -15}
+        - {x: 8, y: -15}
+        - {x: 14, y: -10}
+        - {x: 14, y: 9}
+        - {x: 11, y: 21}
+      - - {x: -10, y: 16}
+        - {x: -7, y: 17}
+        - {x: -7, y: 20}
+        - {x: -10, y: 21}
+        - {x: -12, y: 19}
+    - name: Spaceship_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 120
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 20}
+        - {x: -14, y: 13}
+        - {x: -14, y: -9}
+        - {x: -9, y: -15}
+        - {x: 8, y: -15}
+        - {x: 14, y: -12}
+        - {x: 14, y: 20}
+      - - {x: -10, y: 18}
+        - {x: -7, y: 19}
+        - {x: -7, y: 22}
+        - {x: -10, y: 23}
+        - {x: -12, y: 21}
+    - name: Spaceship_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 120
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 23}
+        - {x: -14, y: 14}
+        - {x: -14, y: -14}
+        - {x: -11, y: -15}
+        - {x: 11, y: -15}
+        - {x: 14, y: -11}
+        - {x: 14, y: 18}
+        - {x: 12, y: 23}
+    - name: Spaceship_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 21}
+        - {x: -17, y: 6}
+        - {x: -17, y: -20}
+        - {x: -13, y: -24}
+        - {x: 9, y: -24}
+        - {x: 17, y: -16}
+        - {x: 17, y: 3}
+        - {x: 12, y: 21}
+    - name: Spaceship_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 72
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 17}
+        - {x: -15, y: 17}
+        - {x: -17, y: 3}
+        - {x: -17, y: -14}
+        - {x: -10, y: -23}
+        - {x: -8, y: -24}
+        - {x: 6, y: -24}
+        - {x: 11, y: -22}
+        - {x: 17, y: -13}
+    - name: Spaceship_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 72
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 21}
+        - {x: -11, y: 21}
+        - {x: -17, y: -1}
+        - {x: -17, y: -14}
+        - {x: -12, y: -21}
+        - {x: -10, y: -24}
+        - {x: 8, y: -24}
+        - {x: 11, y: -23}
+        - {x: 17, y: -15}
+        - {x: 17, y: -2}
+    - name: Spaceship_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 72
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -24}
+        - {x: -6, y: -22}
+        - {x: -9, y: -21}
+        - {x: -11, y: -24}
+      - - {x: 7, y: -24}
+        - {x: 11, y: -24}
+        - {x: 11, y: -21}
+        - {x: 8, y: -20}
+        - {x: 6, y: -22}
+      - - {x: 17, y: -14}
+        - {x: 17, y: -3}
+        - {x: 12, y: 17}
+        - {x: -14, y: 17}
+        - {x: -17, y: -4}
+        - {x: -17, y: -13}
+        - {x: -5, y: -24}
+        - {x: -2, y: -24}
+        - {x: 0, y: -23}
+        - {x: 0, y: -21}
+        - {x: 0, y: -23}
+        - {x: 3, y: -24}
+    - name: Spaceship_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 72
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: -24}
+        - {x: 7, y: -24}
+        - {x: 7, y: -21}
+        - {x: 4, y: -20}
+        - {x: 2, y: -22}
+      - - {x: -12, y: 19}
+        - {x: -13, y: 15}
+        - {x: -14, y: 9}
+        - {x: -14, y: -12}
+        - {x: -7, y: -21}
+        - {x: -4, y: -22}
+        - {x: 11, y: -22}
+        - {x: 14, y: -13}
+        - {x: 14, y: 19}
+    - name: Spaceship_13
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 72
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: -22}
+        - {x: 4, y: -22}
+        - {x: 15, y: -12}
+        - {x: 15, y: 7}
+        - {x: 11, y: 21}
+        - {x: -1, y: 21}
+        - {x: -15, y: 16}
+        - {x: -15, y: -11}
+      - - {x: -10, y: 16}
+        - {x: -7, y: 17}
+        - {x: -7, y: 20}
+        - {x: -10, y: 21}
+        - {x: -12, y: 19}
+    - name: Spaceship_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 72
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 20}
+        - {x: -14, y: -11}
+        - {x: -9, y: -20}
+        - {x: -5, y: -21}
+        - {x: 3, y: -21}
+        - {x: 14, y: -10}
+        - {x: 14, y: 20}
+      - - {x: -10, y: 18}
+        - {x: -7, y: 19}
+        - {x: -7, y: 22}
+        - {x: -10, y: 23}
+        - {x: -12, y: 21}
+    - name: Spaceship_15
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 72
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 23}
+        - {x: -4, y: 23}
+        - {x: -11, y: 21}
+        - {x: -14, y: 13}
+        - {x: -14, y: -16}
+        - {x: -8, y: -21}
+        - {x: 4, y: -21}
+        - {x: 14, y: -12}
+        - {x: 14, y: 13}
+        - {x: 13, y: 22}
+    - name: Spaceship_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 17}
+        - {x: -17, y: 10}
+        - {x: -17, y: -18}
+        - {x: -13, y: -19}
+        - {x: 15, y: -19}
+        - {x: 17, y: -15}
+        - {x: 17, y: -2}
+        - {x: 13, y: 17}
+    - name: Spaceship_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 17}
+        - {x: -11, y: 14}
+        - {x: -13, y: 5}
+        - {x: -13, y: -14}
+        - {x: -10, y: -19}
+        - {x: 9, y: -19}
+        - {x: 16, y: -12}
+        - {x: 16, y: -10}
+        - {x: 10, y: 17}
+    - name: Spaceship_18
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 24
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

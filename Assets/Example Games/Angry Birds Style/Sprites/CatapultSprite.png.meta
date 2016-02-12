@@ -1,0 +1,96 @@
+fileFormatVersion: 2
+guid: 0a621f86b09b6cb4eb51a6419e3b485c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: CatapultSprite_0
+    21300002: CatapultSprite_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: CatapultSprite_0
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 29
+        width: 39
+        height: 195
+      alignment: 9
+      pivot: {x: 0.2981282, y: 0.8753225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.626999, y: 24.312103}
+        - {x: -11.626999, y: 22.312103}
+        - {x: -11.626999, y: -119.6879}
+        - {x: -9.626999, y: -170.6879}
+        - {x: 27.373001, y: -170.6879}
+        - {x: 27.373001, y: -44.687897}
+        - {x: 19.373001, y: 24.312103}
+    - name: CatapultSprite_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 108
+        width: 48
+        height: 116
+      alignment: 9
+      pivot: {x: 0.20523627, y: 0.74426126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.851341, y: 29.665695}
+        - {x: -9.851341, y: 26.665695}
+        - {x: -9.851341, y: -31.334305}
+        - {x: 2.1486588, y: -52.334305}
+        - {x: 18.148659, y: -79.334305}
+        - {x: 32.14866, y: -86.334305}
+        - {x: 38.14866, y: -86.334305}
+        - {x: 38.14866, y: -30.334305}
+        - {x: 32.14866, y: 16.665695}
+        - {x: 22.148659, y: 29.665695}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
