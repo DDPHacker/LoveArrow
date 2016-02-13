@@ -17,8 +17,8 @@ public class CoupleController : MonoBehaviour {
 	}
 
 	IEnumerator win() {
-		SceneManager.LoadScene ("StartScene");
-		yield return null;
+		yield return new WaitForSeconds(2);
+		SceneManager.LoadScene ("EndScene");
 	}
 
 	bool checkAllCollide(){

@@ -14,6 +14,7 @@ public class NormalArrowController : MonoBehaviour {
 	private Transform bowT;
 	private ShootArrow sa;
 	private Rigidbody2D rb2d;
+	private float arrowLen = 2.0f;
 	private GameObject water_drip_1;
 	private GameObject water_drip_2;
 	private GameObject water_drip_3;
@@ -24,7 +25,7 @@ public class NormalArrowController : MonoBehaviour {
 		bowT = GameObject.FindGameObjectWithTag("Bow").transform;
 		stPos = GameObject.FindGameObjectWithTag("Bow").transform.FindChild("MidPos").transform;
 		sa = GameObject.FindGameObjectWithTag("Bow").GetComponentInChildren<ShootArrow>();
-		transform.position = stPos.position;
+		transform.position = stPos.position + new Vector3(arrowLen, 0, 0);
 		shootFlag = false;
 		collisionFlag = false;
 
@@ -53,8 +54,9 @@ public class NormalArrowController : MonoBehaviour {
 	void Update () {
 		if (collisionFlag) return;
 		if (!shootFlag && !sa.Shoot()) {
-			transform.position = stPos.position;
 			transform.rotation = bowT.rotation;
+			float rot = transform.rotation.eulerAngles.z * Mathf.PI / 180;
+			transform.position = stPos.position + new Vector3(arrowLen * Mathf.Cos(rot), arrowLen * Mathf.Sin(rot), 0);
 		} else if (!shootFlag && sa.Shoot()) {
 			Shoot();
 		} else {

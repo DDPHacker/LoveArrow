@@ -8,7 +8,7 @@ public class PortalController : MonoBehaviour {
 	// Trigger detect
 	void OnTriggerEnter2D (Collider2D coll) {
 		Vector3 offset = coll.gameObject.transform.position - transform.position;
-		offset.x = -offset.x;
+		offset.x = -offset.x * 2;
 		coll.gameObject.transform.position = anotherPortal.transform.position + offset;
 	}
 }
