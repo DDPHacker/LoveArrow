@@ -8,8 +8,7 @@ public class ArrowManager : MonoBehaviour {
 	private GameObject water_drip_3;
 
 	[HideInInspector] public bool shootFlag;
-	public float minVelocity = 8;
-	public float maxVelocity = 50;
+	public float minVelocity = 0;
 
 	private Transform stPos;
 	private Transform bowT;
@@ -42,8 +41,9 @@ public class ArrowManager : MonoBehaviour {
 		shootFlag = true;
 		float v = sa.OffSet().sqrMagnitude;
 		float rot = transform.rotation.eulerAngles.z * Mathf.PI / 180;
-		if (v < minVelocity) v = minVelocity;
-		if (v > maxVelocity) v = maxVelocity;
+		Debug.Log(v);
+		if (v < minVelocity)
+			v = minVelocity;
 		rb2d.velocity = new Vector2(v * Mathf.Cos(rot), v * Mathf.Sin(rot));
 	}
 
@@ -73,16 +73,14 @@ public class ArrowManager : MonoBehaviour {
 		}
 	}
 
-	// Trigger detect
 	void OnTriggerEnter2D(Collider2D other) {
-		if (other.gameObject.CompareTag("Boundary")) {
-			collisionFlag = true;
-		}
-		if (other.gameObject.CompareTag("Water")) {
+		if (other.gameObject.CompareTag ("Water")) {
 			rb2d.gravityScale = 0.5f;
-			water_drip_1.transform.position = new Vector3(rb2d.transform.position.x,-1,0);
-			water_drip_2.transform.position = new Vector3(rb2d.transform.position.x,-1,0);
-			water_drip_3.transform.position = new Vector3(rb2d.transform.position.x,-1,0);
+			float radius = rb2d.transform.rotation.z * Mathf.PI / 180;
+			float length = 1.4f;
+			water_drip_1.transform.position = new Vector3(rb2d.transform.position.x+ length * Mathf.Cos(radius),-1.8f + length * Mathf.Sin(radius) ,0);
+			water_drip_2.transform.position = water_drip_1.transform.position;
+			water_drip_3.transform.position = water_drip_1.transform.position;
 			water_drip_1.SetActive (true);
 			water_drip_2.SetActive (true);
 			water_drip_3.SetActive (true);
