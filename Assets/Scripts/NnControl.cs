@@ -9,7 +9,7 @@ public class NnControl : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if (other.CompareTag ("NormalArrow")) {
+		if (other.CompareTag ("NormalArrow") || other.CompareTag ("SplittedArrow")) {
 			nnflag = true;
 		}
 	}
