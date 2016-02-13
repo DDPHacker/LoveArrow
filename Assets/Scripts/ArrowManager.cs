@@ -3,19 +3,22 @@ using System.Collections;
 
 public class ArrowManager : MonoBehaviour {
 
-	public Transform stPos;
-	public Transform bowT;
 	[HideInInspector] public bool shootFlag;
+	public float minVelocity = 0;
 
+	private Transform stPos;
+	private Transform bowT;
 	private ShootArrow sa;
 	private bool collisionFlag;
 	private Rigidbody2D rb2d;
 
 	// Use this for initialization
 	void Start () {
-		transform.position = stPos.position;
 		rb2d = GetComponent<Rigidbody2D>();
+		bowT = GameObject.FindGameObjectWithTag("Bow").transform;
+		stPos = GameObject.FindGameObjectWithTag("Bow").transform.FindChild("MidPos").transform;
 		sa = GameObject.FindGameObjectWithTag("Bow").GetComponentInChildren<ShootArrow>();
+		transform.position = stPos.position;
 		shootFlag = false;
 		collisionFlag = false;
 	}
@@ -24,6 +27,9 @@ public class ArrowManager : MonoBehaviour {
 		shootFlag = true;
 		float v = sa.OffSet().sqrMagnitude;
 		float rot = transform.rotation.eulerAngles.z * Mathf.PI / 180;
+		Debug.Log(v);
+		if (v < minVelocity)
+			v = minVelocity;
 		rb2d.velocity = new Vector2(v * Mathf.Cos(rot), v * Mathf.Sin(rot));
 	}
 
