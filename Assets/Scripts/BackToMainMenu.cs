@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class BackToMainMenu : MonoBehaviour {
 
 	public void BackToStartScene() {
-		Application.LoadLevel("StartScene");
+		SceneManager.LoadScene("StartScene");
 	}
 }
