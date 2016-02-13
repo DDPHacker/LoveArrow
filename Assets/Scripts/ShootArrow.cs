@@ -3,22 +3,22 @@ using System.Collections;
 
 public class ShootArrow : MonoBehaviour {
 
-	public Rigidbody2D rb2d;
-	public ArrowManager am;
-
 	private Vector3 stPos;
 	private Vector2 offset;
 	private bool onDrag;
+	private bool shoot;
 
 	// Use this for initialization
 	void Start () {
 		onDrag = false;
+		shoot = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButtonDown(0)) {
 			onDrag = true;
+			shoot = false;
 			stPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			offset = Vector3.zero;
 		} else if (Input.GetMouseButton(0)) {
@@ -28,8 +28,7 @@ public class ShootArrow : MonoBehaviour {
 		} else if (Input.GetMouseButtonUp(0)) {
 			if (onDrag != true) return;
 			onDrag = false;
-			am.shootFlag = true;
-			Shoot(offset);
+			shoot = true;
 		}
 	}
 
@@ -41,9 +40,7 @@ public class ShootArrow : MonoBehaviour {
 		return offset;
 	}
 
-	void Shoot(Vector3 offset) {
-		float v = offset.sqrMagnitude;
-		float rot = transform.rotation.eulerAngles.z * Mathf.PI / 180;
-		rb2d.velocity = new Vector2(v * Mathf.Cos(rot), v * Mathf.Sin(rot));
+	public bool Shoot() {
+		return shoot;
 	}
 }
