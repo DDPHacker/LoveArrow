@@ -13,9 +13,5 @@ public class ArrowControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float angle = Mathf.Atan2 (rb2d.velocity.y, rb2d.velocity.x);
-		Quaternion rot = new Quaternion ();
-		rot.eulerAngles = new Vector3 (0, 0, angle*180/Mathf.PI);
-		transform.rotation = rot;
 	}
 }
