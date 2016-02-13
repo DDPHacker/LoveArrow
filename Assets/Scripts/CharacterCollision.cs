@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class collide : MonoBehaviour {
+public class CharacterCollision : MonoBehaviour {
 
 	void Start () {
 	}

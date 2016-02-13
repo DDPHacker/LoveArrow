@@ -8,7 +8,8 @@ public class ArrowManager : MonoBehaviour {
 	private GameObject water_drip_3;
 
 	[HideInInspector] public bool shootFlag;
-	public float minVelocity = 0;
+	public float minVelocity = 8;
+	public float maxVelocity = 45;
 
 	private Transform stPos;
 	private Transform bowT;
@@ -42,8 +43,8 @@ public class ArrowManager : MonoBehaviour {
 		float v = sa.OffSet().sqrMagnitude;
 		float rot = transform.rotation.eulerAngles.z * Mathf.PI / 180;
 		Debug.Log(v);
-		if (v < minVelocity)
-			v = minVelocity;
+		if (v < minVelocity) v = minVelocity;
+		if (v > maxVelocity) v = maxVelocity;
 		rb2d.velocity = new Vector2(v * Mathf.Cos(rot), v * Mathf.Sin(rot));
 	}
 
