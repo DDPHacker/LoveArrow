@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class drip_disappear : MonoBehaviour {
+public class DripDisappear : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
