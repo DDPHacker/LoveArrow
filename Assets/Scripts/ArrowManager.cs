@@ -8,12 +8,12 @@ public class ArrowManager : MonoBehaviour {
 	private GameObject water_drip_2;
 	private GameObject water_drip_3;
 
-	public Text Result;
+	//public Text Result;
 
 	[HideInInspector] public bool shootFlag;
 	public float minVelocity = 8;
 	public float maxVelocity = 40;
-	public bool collisionFlag;
+	[HideInInspector] public bool collisionFlag;
 
 	private Transform stPos;
 	private Transform bowT;
@@ -30,7 +30,7 @@ public class ArrowManager : MonoBehaviour {
 		shootFlag = false;
 		collisionFlag = false;
 
-		Result.text = "";
+		//Result.text = "";
 		water_drip_1 = GameObject.FindGameObjectWithTag("water_drip_1");
 		water_drip_2 = GameObject.FindGameObjectWithTag("water_drip_2");
 		water_drip_3 = GameObject.FindGameObjectWithTag("water_drip_3");
@@ -81,9 +81,8 @@ public class ArrowManager : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.CompareTag ("Boundary")) {
 			collisionFlag = true;
-			Result.text = "You lose! Try again";
-			StartCoroutine (delay ());
 		}
+		
 		if (other.gameObject.CompareTag ("Water")) {
 			rb2d.gravityScale = 0.5f;
 			float radius = rb2d.transform.rotation.z * Mathf.PI / 180;
