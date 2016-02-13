@@ -20,8 +20,10 @@ public class BowManager : MonoBehaviour {
 				Vector3 newRot = stPos.eulerAngles + new Vector3(0, 0, Mathf.Atan2(offset.y, offset.x) * 180 / Mathf.PI + 180);
 				transform.rotation = Quaternion.Euler(newRot);
 			}
-		} else {
-			transform.rotation = stPos;
 		}
+	}
+
+	public void ResetBow() {
+		transform.rotation = stPos;
 	}
 }
