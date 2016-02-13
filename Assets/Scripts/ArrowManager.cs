@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class ArrowManager : MonoBehaviour {
 
 	private GameObject water_drip_1;
 	private GameObject water_drip_2;
 	private GameObject water_drip_3;
+
+	public Text Result;
 
 	[HideInInspector] public bool shootFlag;
 	public float minVelocity = 8;
@@ -27,6 +30,7 @@ public class ArrowManager : MonoBehaviour {
 		shootFlag = false;
 		collisionFlag = false;
 
+		Result.text = "";
 		water_drip_1 = GameObject.FindGameObjectWithTag("water_drip_1");
 		water_drip_2 = GameObject.FindGameObjectWithTag("water_drip_2");
 		water_drip_3 = GameObject.FindGameObjectWithTag("water_drip_3");
@@ -73,13 +77,22 @@ public class ArrowManager : MonoBehaviour {
 			rb2d.isKinematic = true;
 		}
 	}
+	IEnumerator delay(){
+		yield return new WaitForSeconds(5);
+		SceneManager.LoadScene ("Level_2");
+	}
 
 	void OnTriggerEnter2D(Collider2D other) {
+		if (other.gameObject.CompareTag ("Boundary")) {
+			collisionFlag = true;
+			Result.text = "You lose! Try again";
+			StartCoroutine (delay ());
+		}
 		if (other.gameObject.CompareTag ("Water")) {
 			rb2d.gravityScale = 0.5f;
 			float radius = rb2d.transform.rotation.z * Mathf.PI / 180;
 			float length = 1.4f;
-			water_drip_1.transform.position = new Vector3(rb2d.transform.position.x+ length * Mathf.Cos(radius),-1.8f + length * Mathf.Sin(radius) ,0);
+			water_drip_1.transform.position = new Vector3 (rb2d.transform.position.x + length * Mathf.Cos (radius), -1.8f, 0);
 			water_drip_2.transform.position = water_drip_1.transform.position;
 			water_drip_3.transform.position = water_drip_1.transform.position;
 			water_drip_1.SetActive (true);
@@ -88,7 +101,9 @@ public class ArrowManager : MonoBehaviour {
 			water_drip_1.GetComponent<Rigidbody2D> ().velocity = new Vector2 (5, 5);
 			water_drip_2.GetComponent<Rigidbody2D> ().velocity = new Vector2 (-5, 5);
 			water_drip_3.GetComponent<Rigidbody2D> ().velocity = new Vector2 (3, 3);
-			rb2d.velocity = new Vector2 (rb2d.velocity.x*0.5f,rb2d.velocity.y*0.5f);
+			rb2d.velocity = new Vector2 (rb2d.velocity.x * 0.5f, rb2d.velocity.y * 0.5f);
+		} else if (other.gameObject.CompareTag ("Block")) {
+			rb2d.velocity = new Vector2 (-rb2d.velocity.x, rb2d.velocity.y);
 		}
 	}
 }
