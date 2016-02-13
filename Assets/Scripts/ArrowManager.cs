@@ -9,7 +9,7 @@ public class ArrowManager : MonoBehaviour {
 
 	[HideInInspector] public bool shootFlag;
 	public float minVelocity = 8;
-	public float maxVelocity = 45;
+	public float maxVelocity = 40;
 
 	private Transform stPos;
 	private Transform bowT;
@@ -37,12 +37,12 @@ public class ArrowManager : MonoBehaviour {
 			water_drip_3.SetActive (false);
 		}
 	}
-		
+
+	// Shoot function
 	void Shoot() {
 		shootFlag = true;
 		float v = sa.OffSet().sqrMagnitude;
 		float rot = transform.rotation.eulerAngles.z * Mathf.PI / 180;
-		Debug.Log(v);
 		if (v < minVelocity) v = minVelocity;
 		if (v > maxVelocity) v = maxVelocity;
 		rb2d.velocity = new Vector2(v * Mathf.Cos(rot), v * Mathf.Sin(rot));
