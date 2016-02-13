@@ -46,7 +46,7 @@ public class CameraFollow : MonoBehaviour {
 	void FixedUpdate() {
 		if (sa.Shoot() && target) {
 			Vector3 point = Camera.main.WorldToViewportPoint(target.position);
-			Vector3 delta = target.position - Camera.main.ViewportToWorldPoint(new Vector3(0.20f, 0.5f, point.z));
+			Vector3 delta = target.position - Camera.main.ViewportToWorldPoint(new Vector3(0.22f, 0.5f, point.z));
 			float x = Mathf.Clamp(transform.position.x + delta.x, MinX, MaxX);
 			Vector3 destination = new Vector3(x, transform.position.y, transform.position.z);
 			transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
