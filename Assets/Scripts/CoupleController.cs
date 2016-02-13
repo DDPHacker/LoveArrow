@@ -4,6 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class CoupleController : MonoBehaviour {
 
+	IEnumerator delay() {
+		yield return new WaitForSeconds(5);
+		SceneManager.LoadScene ("Level_2");
+	}
+
 	void Update () {
 		Transform nan = transform.FindChild ("nan");
 		Transform nv = transform.FindChild ("nv");

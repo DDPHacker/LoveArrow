@@ -77,10 +77,6 @@ public class ArrowManager : MonoBehaviour {
 			rb2d.isKinematic = true;
 		}
 	}
-	IEnumerator delay(){
-		yield return new WaitForSeconds(5);
-		SceneManager.LoadScene ("Level_2");
-	}
 
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.CompareTag ("Boundary")) {
