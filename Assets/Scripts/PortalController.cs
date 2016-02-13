@@ -5,16 +5,7 @@ public class PortalController : MonoBehaviour {
 
 	public GameObject anotherPortal;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
+	// Trigger detect
 	void OnTriggerEnter2D (Collider2D coll) {
 		Vector3 offset = coll.gameObject.transform.position - transform.position;
 		offset.x = -offset.x;

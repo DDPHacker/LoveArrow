@@ -23,6 +23,7 @@ public class BowManager : MonoBehaviour {
 		}
 	}
 
+	// Reset bow rotation
 	public void ResetBow() {
 		transform.rotation = stPos;
 	}

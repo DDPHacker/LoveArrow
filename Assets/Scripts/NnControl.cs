@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class NnControl : MonoBehaviour {
+	
 	public bool nnflag;
 
 	void Start () {

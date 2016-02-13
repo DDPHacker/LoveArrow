@@ -11,24 +11,26 @@ public class CoupleController : MonoBehaviour {
 		Result.text = "";
 	}
 
-	IEnumerator delay(int level) {
+	IEnumerator level(int level) {
 		yield return new WaitForSeconds(2);
-		SceneManager.LoadScene ("Level_" + level.ToString ());
-		if (level == 0) {
-			SceneManager.LoadScene ("StartScene");
-		}
+		SceneManager.LoadScene ("Level_" + level.ToString());
+	}
+
+	IEnumerator win() {
+		SceneManager.LoadScene ("StartScene");
+		yield return null;
 	}
 
 	bool checkAllCollide(){
 		GameObject[] go = GameObject.FindGameObjectsWithTag ("NormalArrow");
 		for (int i = 0; i < go.Length; ++i) {
-			if (!go [i].GetComponent<ArrowManager> ().collisionFlag)
+			if (!go [i].GetComponent<NormalArrowController> ().collisionFlag)
 				return false;
 		}
 		go = GameObject.FindGameObjectsWithTag ("SplittedArrow");
 		print (go.Length);
 		for (int i = 0; i < go.Length; ++i) {
-			if (!go [i].GetComponent<SplitArrowControl> ().collisionFlag)
+			if (!go [i].GetComponent<SplitArrowController> ().collisionFlag)
 				return false;
 		}
 		return true;
@@ -46,14 +48,14 @@ public class CoupleController : MonoBehaviour {
 			if (nan.GetComponent<NnControl> ().nnflag && nv.GetComponent<NnControl> ().nnflag) {
 				if (next == 6) {
 					Result.text = "You win!";
-					StartCoroutine (delay (0));
+					StartCoroutine(win());
 				} else {
 					Result.text = "Good job!";
-					StartCoroutine (delay (next));
+					StartCoroutine(level(next));
 				}
 			} else {
 				Result.text = "You lose! Try again";
-				StartCoroutine (delay (next-1));
+				StartCoroutine(level(next - 1));
 			}
 		}
 			

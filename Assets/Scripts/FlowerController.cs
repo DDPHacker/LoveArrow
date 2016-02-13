@@ -11,7 +11,7 @@ public class FlowerController : MonoBehaviour {
 
 	void LateUpdate () {
 
-		if (GetComponent<ArrowManager>().shootFlag && Input.GetMouseButtonDown (0)) {
+		if (GetComponent<NormalArrowController>().shootFlag && Input.GetMouseButtonDown (0)) {
 			GameObject yumeiren = (GameObject)Instantiate(Resources.Load("yumeiren"));
 			GameObject rose = (GameObject)Instantiate(Resources.Load("rose"));
 			Quaternion qy, qr;
@@ -21,6 +21,7 @@ public class FlowerController : MonoBehaviour {
 			qr.eulerAngles = new Vector3 (0, 0, transform.rotation.eulerAngles.z + 20);
 			yumeiren.transform.rotation = qy;
 			rose.transform.rotation = qr;
+			Camera.main.GetComponent<CameraFollow>().target = rose.transform;
 
 			yumeiren.SetActive (true);
 			rose.SetActive (true);

@@ -2,35 +2,25 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class ArrowManager : MonoBehaviour {
 
+public class SplitArrowController : MonoBehaviour {
+
+	public float minVelocity = 8;
+	public float maxVelocity = 40;
+	[HideInInspector] public bool shootFlag;
+	[HideInInspector] public bool collisionFlag;
+
+	private Rigidbody2D rb2d;
 	private GameObject water_drip_1;
 	private GameObject water_drip_2;
 	private GameObject water_drip_3;
 
-	//public Text Result;
-
-	[HideInInspector] public bool shootFlag;
-	public float minVelocity = 8;
-	public float maxVelocity = 40;
-	[HideInInspector] public bool collisionFlag;
-
-	private Transform stPos;
-	private Transform bowT;
-	private ShootArrow sa;
-	private Rigidbody2D rb2d;
-
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D>();
-		bowT = GameObject.FindGameObjectWithTag("Bow").transform;
-		stPos = GameObject.FindGameObjectWithTag("Bow").transform.FindChild("MidPos").transform;
-		sa = GameObject.FindGameObjectWithTag("Bow").GetComponentInChildren<ShootArrow>();
-		transform.position = stPos.position;
-		shootFlag = false;
+		shootFlag = true;
 		collisionFlag = false;
 
-		//Result.text = "";
 		water_drip_1 = GameObject.FindGameObjectWithTag("water_drip_1");
 		water_drip_2 = GameObject.FindGameObjectWithTag("water_drip_2");
 		water_drip_3 = GameObject.FindGameObjectWithTag("water_drip_3");
@@ -42,30 +32,15 @@ public class ArrowManager : MonoBehaviour {
 		}
 	}
 
-	// Shoot function
-	void Shoot() {
-		shootFlag = true;
-		float v = sa.OffSet().sqrMagnitude;
-		float rot = transform.rotation.eulerAngles.z * Mathf.PI / 180;
-		if (v < minVelocity) v = minVelocity;
-		if (v > maxVelocity) v = maxVelocity;
-		rb2d.velocity = new Vector2(v * Mathf.Cos(rot), v * Mathf.Sin(rot));
-	}
 
 	// Update is called once per frame
 	void Update () {
 		if (collisionFlag) return;
-		if (!shootFlag && !sa.Shoot()) {
-			transform.position = stPos.position;
-			transform.rotation = bowT.rotation;
-		} else if (!shootFlag && sa.Shoot()) {
-			Shoot();
-		} else {
-			float angle = Mathf.Atan2 (rb2d.velocity.y, rb2d.velocity.x);
-			Quaternion rot = new Quaternion ();
-			rot.eulerAngles = new Vector3 (0, 0, angle * 180 / Mathf.PI);
-			transform.rotation = rot;
-		}
+
+		float angle = Mathf.Atan2 (rb2d.velocity.y, rb2d.velocity.x);
+		Quaternion rot = new Quaternion ();
+		rot.eulerAngles = new Vector3 (0, 0, angle * 180 / Mathf.PI);
+		transform.rotation = rot;
 	}
 
 	// Collision detect
@@ -78,11 +53,12 @@ public class ArrowManager : MonoBehaviour {
 		}
 	}
 
+	// Trigger detect
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.CompareTag ("Boundary")) {
 			collisionFlag = true;
 		}
-		
+
 		if (other.gameObject.CompareTag ("Water")) {
 			rb2d.gravityScale = 0.5f;
 			float radius = rb2d.transform.rotation.z * Mathf.PI / 180;
