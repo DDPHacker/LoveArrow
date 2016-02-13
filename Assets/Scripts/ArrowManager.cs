@@ -3,35 +3,47 @@ using System.Collections;
 
 public class ArrowManager : MonoBehaviour {
 
-	public GameObject water_drip_1;
-	public GameObject water_drip_2;
-	public GameObject water_drip_3;
+	private GameObject water_drip_1;
+	private GameObject water_drip_2;
+	private GameObject water_drip_3;
 
-	public Transform stPos;
-	public Transform bowT;
 	[HideInInspector] public bool shootFlag;
+	public float minVelocity = 0;
 
+	private Transform stPos;
+	private Transform bowT;
 	private ShootArrow sa;
 	private bool collisionFlag;
 	private Rigidbody2D rb2d;
 
 	// Use this for initialization
 	void Start () {
-		transform.position = stPos.position;
 		rb2d = GetComponent<Rigidbody2D>();
+		bowT = GameObject.FindGameObjectWithTag("Bow").transform;
+		stPos = GameObject.FindGameObjectWithTag("Bow").transform.FindChild("MidPos").transform;
 		sa = GameObject.FindGameObjectWithTag("Bow").GetComponentInChildren<ShootArrow>();
+		transform.position = stPos.position;
 		shootFlag = false;
 		collisionFlag = false;
 
-		water_drip_1.SetActive (false);
-		water_drip_2.SetActive (false);
-		water_drip_3.SetActive (false);
+		water_drip_1 = GameObject.FindGameObjectWithTag("water_drip_1");
+		water_drip_2 = GameObject.FindGameObjectWithTag("water_drip_2");
+		water_drip_3 = GameObject.FindGameObjectWithTag("water_drip_3");
+
+		if (water_drip_1 && water_drip_2 && water_drip_3) {
+			water_drip_1.SetActive (false);
+			water_drip_2.SetActive (false);
+			water_drip_3.SetActive (false);
+		}
 	}
 		
 	void Shoot() {
 		shootFlag = true;
 		float v = sa.OffSet().sqrMagnitude;
 		float rot = transform.rotation.eulerAngles.z * Mathf.PI / 180;
+		Debug.Log(v);
+		if (v < minVelocity)
+			v = minVelocity;
 		rb2d.velocity = new Vector2(v * Mathf.Cos(rot), v * Mathf.Sin(rot));
 	}
 

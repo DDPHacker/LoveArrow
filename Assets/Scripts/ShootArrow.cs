@@ -32,14 +32,17 @@ public class ShootArrow : MonoBehaviour {
 		}
 	}
 
-	public bool OnDrop() {
+	// Get Drog Status
+	public bool OnDrag() {
 		return onDrag;
 	}
 
+	// Get Offset 
 	public Vector3 OffSet() {
 		return offset;
 	}
 
+	// Get shoot status
 	public bool Shoot() {
 		return shoot;
 	}

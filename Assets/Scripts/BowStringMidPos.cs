@@ -16,7 +16,7 @@ public class BowStringMidPos : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (sa.OnDrop()) {
+		if (sa.OnDrag()) {
 			Vector2 offset = sa.OffSet();
 			offset = offset / 5;
 			float stretch = offset.sqrMagnitude;

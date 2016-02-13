@@ -10,7 +10,7 @@ public class drip_disappear : MonoBehaviour {
 	
 	// Update is called once per frame
 	void OnTriggerEnter2D(Collider2D other) {
-		if (other.gameObject.CompareTag ("Drip")) {
+		if (other.gameObject.CompareTag ("water_drip_1")||other.gameObject.CompareTag ("water_drip_2")||other.gameObject.CompareTag ("water_drip_3")) {
 			other.gameObject.SetActive(false);
 		}
 	}
