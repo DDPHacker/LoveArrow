@@ -3,6 +3,7 @@ using System.Collections;
 
 public class ShootArrow : MonoBehaviour {
 
+	private float MaxMagnitude = 20;
 	private Vector3 stPos;
 	private Vector2 offset;
 	private bool onDrag;
@@ -17,9 +18,10 @@ public class ShootArrow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButtonDown(0)) {
+			stPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			if (((Vector2)(stPos - transform.position)).sqrMagnitude > MaxMagnitude) return;
 			onDrag = true;
 			shoot = false;
-			stPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			offset = Vector3.zero;
 		} else if (Input.GetMouseButton(0)) {
 			if (onDrag != true) return;

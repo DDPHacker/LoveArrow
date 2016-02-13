@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BowStringMidPos : MonoBehaviour {
 
-	public float maxStretch;
+	public float maxStretch = 1;
 
 	private Vector3 stPos;
 	private ShootArrow sa;
