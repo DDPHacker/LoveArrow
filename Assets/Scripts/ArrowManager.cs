@@ -13,11 +13,11 @@ public class ArrowManager : MonoBehaviour {
 	[HideInInspector] public bool shootFlag;
 	public float minVelocity = 8;
 	public float maxVelocity = 40;
+	public bool collisionFlag;
 
 	private Transform stPos;
 	private Transform bowT;
 	private ShootArrow sa;
-	private bool collisionFlag;
 	private Rigidbody2D rb2d;
 
 	// Use this for initialization
