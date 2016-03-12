@@ -1,6 +1,6 @@
 # LoveArrow
 
-<img src="Images/icon.png" style="height:100px"> </img>
+<img src="Images/icon.png" width="100"> </img>
 
 A mobile-based arrow shooting game made by Unity3D for Hackentine's at SFU.
 
