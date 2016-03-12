@@ -1,6 +1,11 @@
 # LoveArrow
-Hackathon in SFU!
 
+<img src="Images/icon.png" style="height:100px"> </img>
+
+A mobile-based arrow shooting game made by Unity3D for Hackentine's at SFU.
+
+Try to make them fall in love! 
+ 
 ### Screen shots
 
 ![img](Images/1.jpg)
@@ -23,7 +28,7 @@ Hackathon in SFU!
 
 ![img](Images/10.jpg)
 
-### A small funny bug when we made game :P
+### Here is a funny bug when we made the game :P
 
 ![img](Images/bug.gif)
 
